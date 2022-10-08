@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Alexf17/react-training/static/css/main.9d4db9ea.css",
-    "main.js": "/Alexf17/react-training/static/js/main.01b8613c.js",
+    "main.js": "/Alexf17/react-training/static/js/main.15f7f6ee.js",
     "index.html": "/Alexf17/react-training/index.html",
     "main.9d4db9ea.css.map": "/Alexf17/react-training/static/css/main.9d4db9ea.css.map",
-    "main.01b8613c.js.map": "/Alexf17/react-training/static/js/main.01b8613c.js.map"
+    "main.15f7f6ee.js.map": "/Alexf17/react-training/static/js/main.15f7f6ee.js.map"
   },
   "entrypoints": [
     "static/css/main.9d4db9ea.css",
-    "static/js/main.01b8613c.js"
+    "static/js/main.15f7f6ee.js"
   ]
 }
