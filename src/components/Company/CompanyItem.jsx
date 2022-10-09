@@ -1,26 +1,35 @@
-import { Avatar } from "./CompanyItem.styled" 
+import {
+  Avatar,
+  ItemList,
+  H3,
+  Info,
+  ListInfo,
+  Paragr,
+} from './CompanyItem.styled';
+import { Gi3DHammer, Gi3DMeeple, GiAbstract027 } from 'react-icons/gi';
 
-
-export const CompanyItem = ({company}) => {
+export const CompanyItem = ({ company }) => {
   return (
-<li key={company.id} >
-<h3>{company.name}</h3>
-<div>
-    <Avatar src={company.avatar} alt={company.name}></Avatar>
-    <ul>
-          <li>
-          <p>{company.position}</p>
-          </li>
-          <li>
-          <p>{company.email}</p>
-          </li>
-          <li>
-          <p>{company.location}</p>
-          </li>
-    </ul>
-</div>
-<div>{company.reviews}</div>
-</li>
-  )
-
-}
+    <ItemList key={company.id}>
+      <H3>{company.name}</H3>
+      <div>
+        <Avatar src={company.avatar} alt={company.name}></Avatar>
+        <Info>
+          <ListInfo>
+            <Gi3DHammer />
+            <Paragr>{company.position}</Paragr>
+          </ListInfo>
+          <ListInfo>
+            <Gi3DMeeple />
+            <Paragr>{company.email}</Paragr>
+          </ListInfo>
+          <ListInfo>
+            <GiAbstract027 />
+            <Paragr>{company.location}</Paragr>
+          </ListInfo>
+        </Info>
+      </div>
+      <div>{company.reviews}</div>
+    </ItemList>
+  );
+};
