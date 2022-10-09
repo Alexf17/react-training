@@ -6,6 +6,8 @@ import data from '../json/data.json';
 import friends from '../json/friends.json';
 import transactions from '../json/transactions.json';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { Company } from './Company/Company';
+import company from '../json/mycompany.json';
 
 export const App = () => {
   return (
@@ -14,6 +16,7 @@ export const App = () => {
       <Statistics data={data} title="upload text" />
       <Friend friends={friends} />
       <TransactionHistory items={transactions} />
+      <Company company={company} />
     </>
   );
 };
