@@ -5,6 +5,9 @@ import {
   Info,
   ListInfo,
   Paragr,
+  ItemWrap,
+  Circle,
+  CircleText,
 } from './CompanyItem.styled';
 import { Gi3DHammer, Gi3DMeeple, GiAbstract027 } from 'react-icons/gi';
 
@@ -12,7 +15,7 @@ export const CompanyItem = ({ company }) => {
   return (
     <ItemList key={company.id}>
       <H3>{company.name}</H3>
-      <div>
+      <ItemWrap>
         <Avatar src={company.avatar} alt={company.name}></Avatar>
         <Info>
           <ListInfo>
@@ -28,8 +31,10 @@ export const CompanyItem = ({ company }) => {
             <Paragr>{company.location}</Paragr>
           </ListInfo>
         </Info>
-      </div>
-      <div>{company.reviews}</div>
+        <Circle>
+          <CircleText>{company.reviews}</CircleText>
+        </Circle>
+      </ItemWrap>
     </ItemList>
   );
 };
