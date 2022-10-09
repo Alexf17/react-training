@@ -12,7 +12,6 @@ export const Statistics = ({ data, titleText }) => {
       {titleText && <Title titleText={titleText} />}
 
       <StatisticsList>
-        {/* {console.log(data)} */}
         {data.map(({ id, label, percentage }) => (
           <StatisticsItem key={id}>
             <StatsListItem label={label} percentage={percentage} />
